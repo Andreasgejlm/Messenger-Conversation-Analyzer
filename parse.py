@@ -6,11 +6,9 @@ import pytz
 from ftfy import fix_text
 
 
-DIR = os.getcwd() + "/messages/inbox/"
-
 class Parser:
-    def __init__(self, participant, own_timezone):
-        thread_dir = DIR + participant + '/'
+    def __init__(self, participantPath, own_timezone):
+        thread_dir=participantPath + '/'
         assert os.path.isdir(thread_dir), "Not a correct directory"
         assert own_timezone in pytz.all_timezones, "Not a correct timezone"
         self.timezone = pytz.timezone(own_timezone)
