@@ -5,5 +5,5 @@ reportlab==3.5.32
 ftfy==5.6
 seaborn==0.9.0
 matplotlib==3.0.3
-Pillow==6.2.1
+Pillow>=6.2.2
 PyPDF2==1.26.0
